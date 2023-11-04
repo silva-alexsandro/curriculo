@@ -1,101 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./main.css">
+    <title>Curriculo Alexsandro</title>
 </head>
 <body>
 
     <div class="wrapper">
         <div class="columnLeft">
-          <figure class="avatar">
-            <img src="https://avatars.githubusercontent.com/u/149261935?v=4" alt="Imagem do desenvolvedor">
-          </figure>
-            
+          <div id="avatar" class="flexbox">
+                <figure>
+                    <img src="https://avatars.githubusercontent.com/u/149261935?v=4" alt="Imagem do desenvolvedor"
+                    title="Desenvolvedor Alexsandro">
+                    <figcaption>Homem negro sorrindo, ele está utilizando um camisa social preta</figcaption>
+                </figure>
+          </div>
           <section class="section">
-            <h2>Dados pessoais</h2>
-            <ul>
-                <li>
-                    <i></i>
-                    <p>Nome</p>
+            <h2 class="line">Dados pessoais</h2>
+            <ul class="flexbox">
+                <li class="flexbox">
+                    <i class='bx bxs-user icons'></i>
+                    <span>Alexsandro Silva</span>
                 </li>
-                <li>
-                    <i></i>
-                    <p>E-mail</p>
+                <li class="flexbox">
+                    <i class='bx bx-envelope icons'></i>
+                    <span>acg.alexsandro@hotmail.com</span>
                 </li>
-                <li>
-                    <i></i>
-                    <p>Telefone</p>
+                <li class="flexbox">
+                    <i class='bx bx-phone icons' ></i>
+                    <span>(021) 96840-7129</span>
                 </li>
-                <li>
-                    <i></i>
-                    <p>Endereço</p>
+                <li class="flexbox">
+                    <i class='bx bx-home icons' ></i>
+                    <span>Rio de Janeiro</span>
                 </li>
-                <li>
-                    <i></i>
-                    <p>Linkedin</p>
+                <li class="flexbox">
+                    <i class='bx bxl-linkedin icons'></i>
+                    <a href="https://www.linkedin.com/in/dasilva-alexsandro/" target="_blank">
+                        in/dasilva-alexsandro/
+                    </a>
                 </li>
-                <li>
-                    <i></i>
-                    <p>Meu Lattes</p>
+                <li class="flexbox">
+                    <i class='bx bx-world icons'></i>
+                    <a href="http://lattes.cnpq.br/5089703650712973" target="_blank">
+                       lattes.cnpq.br/5089703650712973
+                    </a>
                 </li>
             </ul>
           </section>
-          <section class="section">
-            <h2>Competências</h2>
-
-            <article class="skill">
-                <strong>skill 1</strong>
-                <div class="containerNivel">
-                    <div class="circle cicleFull"></div>
-                    <div class="circle cicleFull"></div>
-                    <div class="circle cicleFull"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </article>
-
-            <article class="skill">
-                <strong>skill 2</strong>
-                <div class="containerNivel">
-                    <div class="circle cicleFull"></div>
-                    <div class="circle cicleFull"></div>
-                    <div class="circle cicleFull"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </article>
-
-          
+          <section id="skills" class="section">
+                <h2 class="line lineSkill">Competências</h2>
+                <article class="flexbox">
+                    <p>
+                        <strong>Skill 1</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </article>
+                <article class="flexbox">
+                    <p>
+                        <strong>Skill 1</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </article>
+                <article class="flexbox">
+                    <p>
+                        <strong>Skill 1</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </article>
+                <article class="flexbox">
+                    <p>
+                        <strong>Skill 1</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </article>
+    
           </section>
-          <section class="section">
-            <h2>Idiomas</h2>
-
-            <article class="skill">
-                <strong>idioma 1</strong>
-                <div class="containerNivel">
-                    <div class="circle cicleFull"></div>
-                    <div class="circle cicleFull"></div>
-                    <div class="circle cicleFull"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </article>
+          <section id="langue" class="section">
+                <h2 class="line lineIdioma">Idiomas</h2>
+                <article class="flexbox">
+                    <p>
+                        <strong>Português</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                    </div>
+                </article>
+                <article class="flexbox">
+                    <p>
+                        <strong>Inglês</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </article>
+                <article class="flexbox">
+                    <p>
+                        <strong>Espanhol</strong>
+                    </p>
+                    <div class="flexbox">
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle cicleFull"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </article>
+    
           </section>
-         
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <div class="columnRight">
             <p>
@@ -105,5 +158,6 @@
         
     </div>
     
+  
 </body>
 </html>

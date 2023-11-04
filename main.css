@@ -1,0 +1,118 @@
+:root{
+    --colorWhite:#fff;
+    --colorBack:#000;
+    --bgMagentaDark:#70476C;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+}
+.line::after{
+    content: '';
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: var(--colorWhite);
+    opacity: .6;
+    margin-left: .5rem;
+    position: relative;
+    vertical-align: middle;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--colorWhite);
+    opacity: .5;
+    margin-right: .25rem;
+}
+.cicleFull{
+    opacity: .9;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    max-width: 992px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.columnLeft{
+    padding: 1.25rem 0;
+    background: var(--bgMagentaDark);
+    color: var(--colorWhite);
+}
+#avatar{
+    justify-content: center;
+}
+#avatar figure{
+    width: max(50px, min(200px, 22vw));
+    height: max(50px, min(200px, 22vw));
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+#avatar figure img{
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.columnLeft .section{
+    padding:0 .75rem;
+    margin-top: 1.5rem; 
+}
+.columnLeft .section .lineSkill::after{
+    width: 27%;
+}
+.columnLeft .section .lineIdioma::after{
+    width: 58%;
+}
+.columnLeft .section ul.flexbox{
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.columnLeft .section ul li{
+    align-items: center;
+    gap: 1rem;
+}
+.columnLeft .section ul li .icons{
+    font-size: 20px;
+}
+.columnLeft .section ul li span, a{
+    word-break: break-all;
+}
+
+article.flexbox{
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+article p strong{
+    word-break: break-all;
+}
+article p strong{
+    font-weight: 500;
+}
